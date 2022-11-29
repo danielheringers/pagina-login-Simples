@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/imagens/favicon.png" type="image/x-icon">
+    <script defer type="module" src="./src/script/index.js"></script>
+    <title>Googli</title>
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="containerLogo">
+                <img src="./src/imagens/Ativo 1.png" alt="logo">
+                <p>Junte-se a nós</p>
+            </div>
+            
+            <div class="containerInputs">
+                <h1>Faça Login</h1>
+                <form>
+                    <div class="inputBox">
+                        <input class="inputEmail" type="email" autocomplete="username" name="E-mail" required>   
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputBox">
+                        <input class="inputSenha" type="password" name="senha" autocomplete="current-password" required>
+                        <span>Senha</span>
+                    </div>
+                </form>
+                <a class="esqueceuSenha">Esqueceu sua senha?</a>
+                <a class="cadastro">Cadastre-se</a>
+                <button class="btnLogin">Login</button>
+            </div>
+
+            <div class="" id="modalWraperA">
+                <div class="modal">
+                    <h2 class="mensagemModal">Por favor insira seus dados</h2>
+                    <button type="button" class="btnFechar">Fechar</button>
+                </div>
+            </div>
+
+            <div class="" id="modalWraper">
+                <div class="modalCadastro">
+                    <form>
+                        <div class="inputBoxCadastro">
+                            <p>Insira Seus Dados</p>
+                            <input type="text" name="nome" class="nome" placeholder="Nome" required>
+                            <input autocomplete="email" type="email" name="email" class="email" placeholder="E-mail" required>
+                            <input autocomplete="current-password" type="password" name="senha" class="senha" placeholder="Senha" required>
+                            <input type="url" name="imagem" class="imagem" placeholder="Imagem Url" required>
+                            <input type="text" name="profissão" class="profissão" placeholder="Profissão" required>
+                            <button type="button" class="btnCadastroFechar">Fechar</button>
+                            <button type="button" class="btnCadastrar" id="cadastrar">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="" id="modalWraperSenha">
+                <div class="modalSenha">
+                    <h2 class="mensagemModal">Insira o e-mail para recuperação da sua senha</h2>
+                    <input autocomplete="email" type="email" name="email" class="emailRecuperarSenha" placeholder="E-mail" required>
+                    <button type="button" class="btnEsqueceuFechar">Fechar</button>
+                    <button type="button" class="btnEnviar">Enviar</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
